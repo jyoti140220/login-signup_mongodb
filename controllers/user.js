@@ -12,8 +12,9 @@ const signup = (req, res) => {
                     password: req.body.password,
                     email: req.body.email
                 })
-                res.send("signup succesfully..")
+                
                 const result = await document.save()
+                res.send("signup succesfully..")
 
             } else {
                 res.send("this email is aleredy exists please do login.....")
