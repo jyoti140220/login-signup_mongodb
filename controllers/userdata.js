@@ -16,5 +16,4 @@ const allSignedUser= async (req,res)=>{
         })
     }
 }
-
 module.exports = allSignedUser

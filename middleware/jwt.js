@@ -1,4 +1,5 @@
-const jwt=require('jsonwebtoken')
+const jwt=require('jsonwebtoken');
+
 createToken = (data,secret_key) => {
     return jwt.sign(data, secret_key)
 

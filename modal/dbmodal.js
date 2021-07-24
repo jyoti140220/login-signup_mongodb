@@ -17,7 +17,6 @@ const user = new mongoose.Schema({
 
 
 
-
 const userschema = new mongoose.model('jyoticollection', user)
 
 module.exports=userschema
