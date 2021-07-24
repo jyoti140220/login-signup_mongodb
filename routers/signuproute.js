@@ -1,8 +1,7 @@
 const express=require('express')
 const router=express.Router()
-const {signup,login}=require('../controllers/user.js')
+const signup=require('../controllers/signup.js')
 
 router.get('/signup',signup)
-router.get('/login',login)
 
 module.exports=router

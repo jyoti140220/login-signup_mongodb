@@ -1,6 +1,7 @@
 const mongoose=require('mongoose');
+const dotenv=require('dotenv').config()
 
-var DB = 'mongodb+srv://jyoti:jyotibhandari@cluster0.ckuzv.mongodb.net/jyotiDB?retryWrites=true&w=majority'
+var DB =process.env.MONGODB_URL
 
 mongoose.connect(DB, {
     useNewUrlParser: true,
