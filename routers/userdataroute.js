@@ -5,4 +5,5 @@ const login=require('../controllers/userdata.js')
 
 router.get('/alluser',login)
 
+
 module.exports=router
