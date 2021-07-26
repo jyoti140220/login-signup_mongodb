@@ -3,7 +3,6 @@ const router=express.Router()
 
 const login=require('../controllers/userdata.js')
 
-router.get('/alluser',login)
-
+router.get('/',login)
 
 module.exports=router

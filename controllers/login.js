@@ -3,6 +3,7 @@ const jwt = require('jsonwebtoken')
 const bcrypt = require('bcrypt')
 const jwttoken=require('../middleware/jwt');
 
+
 const login = async (req, res) => {
     const data1 = await db.findOne({ email: req.body.email })
     if(data1){
